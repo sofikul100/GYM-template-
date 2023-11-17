@@ -7,11 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gym Tainer</title>
   <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500&family=Oswald:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet" />
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:wght@100;200;300&display=swap"
+    rel="stylesheet">
+  <!-- end google fonts -->
+
+
   <link rel="stylesheet" href="./public/css/aos.css" />
   <link rel="stylesheet" href="./public/css/owl.carousel.css" />
   <link rel="stylesheet" href="./public/css/owl.theme.css" />
@@ -21,18 +24,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- index css file here -->
   <link rel="stylesheet" href="./public/css/index.css" />
+
 </head>
 
-<body>
+<body class="bg-[#fff] dark:bg-primary">
   <div id="preloader">
-    <p class="">Loading...</p>
+    <div id="loader"></div>
   </div>
 
-  <div id="whole_section">
+  <div>
     <!-- HEADER START -->
 
-    <div class="heros_section">
-      <header class="w-full z-100">
+    <div class="heros_section relative overflow-hidden">
+
+      <header class="w-full relative z-50">
+        
         <!-- mid header  -->
         <section>
           <div>
@@ -44,49 +50,45 @@
                     <div class="flex-shrink-0">
                       <h1 class="text-lg font-semibold tracking-widest text-green-500 uppercase">
                         <a href="#">
-                          <img src="./public/image/logo.png" alt="Edule" class="w-[140px] md:w-[160px] md:h-[60]" />
+                          <img src="./public/image/logo.png" alt="Edule" class="w-[110px] md:w-[140px] md:h-[50]" />
                         </a>
                       </h1>
                     </div>
                     <div class="hidden lg:block m-auto">
-                      <div class="flex items-center">
+                      <div class="flex items-center space-x-[15px]">
                         <a href=""
-                          class="flex flex-row active-menu hover:text-element_color duration-500 relative items-center ml-4 text-[14px] font-[400] text-text_color transition-all focus:outline-none">
+                          class="flex flex-row active-menu hover:text-element_color duration-500 relative items-center ml-4 text-[16px] font-raj font-[700] text-[#fff] transition-all focus:outline-none">
                           <span class="text-center">HOME</span>
                         </a>
                         <a href=""
-                          class="flex flex-row active-header hover:text-element_color duration-500 relative items-center ml-4 text-[14px] font-[400] text-text_color transition-all focus:outline-none">
-                          <span class="text-center">BLOG</span>
-                        </a>
-                        <a href=""
-                          class="flex flex-row active-header hover:text-element_color duration-500 relative items-center ml-4 text-[14px] font-[400] text-text_color transition-all focus:outline-none">
+                          class="flex flex-row active-header hover:text-element_color duration-500 relative items-center ml-4 text-[16px] font-raj font-[700] text-[#fff] transition-all focus:outline-none">
                           <span class="text-center">ABOUT</span>
                         </a>
                         <a href=""
-                          class="flex flex-row active-header hover:text-element_color duration-500 relative items-center ml-4 text-[14px] font-[400] text-text_color transition-all focus:outline-none">
-                          <span class="text-center">COURSE</span>
+                          class="flex flex-row active-header hover:text-element_color duration-500 relative items-center ml-4 text-[16px] font-raj font-[700] text-[#fff] transition-all focus:outline-none">
+                          <span class="text-center">GALLERY</span>
                         </a>
                         <div class="relative group">
                           <a href="#about_section">
                             <button @click="open = !open"
-                              class="flex flex-row hover:text-element_color duration-500 items-center py-2 relative ml-2 text-[14px] font-[400] hover:text-white hover:bg-sky-600 focus:outline-none text-text_color">
+                              class="flex flex-row hover:text-element_color duration-500 items-center py-2 relative ml-2 text-[16px] font-raj font-[700]  hover:bg-sky-600 focus:outline-none text-[#fff]">
                               <span class="mx-2">
-                                TRAINERS &nbsp;
-                                <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                SERVICES &nbsp;
+                              </span>
                               <span></span>
                             </button>
                           </a>
                           <div
-                            class="absolute hidden text-text_color transition-all duration-1000 shadow-lg overflow-hidden group-hover:block h-auto w-[180px] border-t-2 border-element_color hover:flex bg-[#2F302F]"
+                            class="absolute hidden text-[#fff] transition-all duration-1000 shadow-lg overflow-hidden group-hover:block h-auto w-[180px] border-t-2 border-element_color hover:flex bg-[#2F302F]"
                             id="blog-sub-menu2">
                             <div class="py-1 bg-white rounded-md shadow-xs">
                               <a href=""
-                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[14px] font-[400] text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[16px] font-raj font-[700] text-gray-700 focus:text-gray-900  focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                                 <i class="fa fa-long-arrow-right mr-[2px]" aria-hidden="true"></i>
                                 Courses
                               </a>
                               <a href=""
-                                class="flex hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[14px] font-[400] text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                                class="flex hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[16px] font-raj font-[700] text-gray-700 focus:text-gray-900  focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                                 <i class="fa fa-long-arrow-right mr-[2px]" aria-hidden="true"></i>
                                 Courses Details
                               </a>
@@ -95,71 +97,71 @@
                         </div>
                         <div class="relative group">
                           <a href="#service_section group"
-                            class="flex flex-row items-center hover:text-element_color duration-500 py-2 relative ml-2 text-[14px] font-[400] text-text_color">
-                            <span class="text-center mx-2">SERVICE &nbsp;
-                              <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            class="flex flex-row items-center hover:text-element_color duration-500 py-2 relative ml-2 text-[16px] font-raj font-[700] text-[#fff]">
+                            <span class="text-center mx-2">PAGES &nbsp;
+                            </span>
                           </a>
                           <div
                             class="absolute hidden transition-all duration-1000 text-[#fff] shadow-lg overflow-hidden group-hover:block h-auto w-[280px] border-t-2 border-element_color hover:flex bg-[#2F302F]"
                             id="blog-sub-menu3">
                             <div class="py-1 bg-white rounded-md shadow-xs">
                               <a href=""
-                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[14px] font-[400]">
+                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[16px] font-raj font-[700]">
                                 <i class="fa fa-long-arrow-right mr-[4px]" aria-hidden="true"></i>
                                 About
                               </a>
                               <a href=""
-                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 font-[400] text-[14px] text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[16px] font-raj font-[700] text-gray-700 focus:text-gray-900  focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                                 <i class="fa fa-long-arrow-right mr-[2px]" aria-hidden="true"></i>
                                 Register
                               </a>
                               <a href=""
-                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 font-[400] text-[14px] text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[16px] font-raj font-[700] text-gray-700 focus:text-gray-900  focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                                 <i class="fa fa-long-arrow-right mr-[2px]" aria-hidden="true"></i>
                                 Login
                               </a>
                               <a href=""
-                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 font-[400] text-[14px] text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[16px] font-raj font-[700] text-gray-700 focus:text-gray-900  focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                                 <i class="fa fa-long-arrow-right mr-[2px]" aria-hidden="true"></i>
                                 FAQ
                               </a>
                               <a href=""
-                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 font-[400] text-[14px] text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[16px] font-raj font-[700] text-gray-700 focus:text-gray-900  focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                                 <i class="fa fa-long-arrow-right mr-[2px]" aria-hidden="true"></i>
                                 404 Error
                               </a>
                               <a href=""
-                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 font-[400] text-[14px] text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[16px] font-raj font-[700] text-gray-700 focus:text-gray-900  focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                                 <i class="fa fa-long-arrow-right mr-[2px]" aria-hidden="true"></i>
                                 After Enroll
                               </a>
                               <a href=""
-                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 font-[400] text-[14px] text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[16px] font-raj font-[700] text-gray-700 focus:text-gray-900  focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                                 <i class="fa fa-long-arrow-right mr-[2px]" aria-hidden="true"></i>
                                 Instructor Dashboard <br />
                               </a>
                               <a href=""
-                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 font-[400] text-[14px] text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[16px] font-raj font-[700] text-gray-700 focus:text-gray-900  focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                                 <i class="fa fa-long-arrow-right mr-[2px]" aria-hidden="true"></i>
                                 Instructor Dashboard <br />
                               </a>
                               <a href=""
-                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 font-[400] text-[14px] text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[16px] font-raj font-[700] text-gray-700 focus:text-gray-900  focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                                 <i class="fa fa-long-arrow-right mr-[2px]" aria-hidden="true"></i>
                                 Students
                               </a>
                               <a href=""
-                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 font-[400] text-[14px] text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[16px] font-raj font-[700] text-gray-700 focus:text-gray-900  focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                                 <i class="fa fa-long-arrow-right mr-[2px]" aria-hidden="true"></i>
                                 Reviews
                               </a>
                               <a href=""
-                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 font-[400] text-[14px] text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
+                                class="flex single_submenu_item hover:text-element_color transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 font-[400] text-[14px] text-gray-700 focus:text-gray-900  focus:outline-none hover:bg-gray-100 focus:bg-gray-100">
                                 <i class="fa fa-long-arrow-right mr-[2px]" aria-hidden="true"></i>
                                 Course Engagement
                               </a>
                               <a href=""
-                                class="flex transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 font-[400] text-[14px] text-gray-700 focus:text-gray-900 hover:text-element_color focus:outline-none focus:bg-gray-100">
+                                class="flex transition-all duration-500 hover:translate-x-1 flex-row items-center px-4 py-2 text-[16px] font-raj font-[700] text-gray-700 focus:text-gray-900 hover:text-element_color focus:outline-none focus:bg-gray-100">
                                 <i class="fa fa-long-arrow-right mr-[2px]" aria-hidden="true"></i>Traffic Conversion
                               </a>
                             </div>
@@ -167,8 +169,8 @@
                         </div>
                         <div class="relative group">
                           <button id="blog_btn_main"
-                            class="blog_btn flex flex-row hover:text-element_color items-center font-[400] relative transition-all duration-1000 py-2 ml-2 text-text_color text-[14px]">
-                            <span class="mx-2">NUTRITION</span>
+                            class="blog_btn flex flex-row hover:text-element_color items-center text-[16px] font-raj font-[700] relative transition-all duration-1000 py-2 ml-2 text-[#fff] ">
+                            <span class="mx-2">PACKAGE</span>
                           </button>
                           <!-- <div
                               class="absolute hidden transition-all duration-1000 shadow-lg overflow-hidden group-hover:block h-auto w-[280px] border-t-2 border-primary hover:flex bg-[#fff]"
@@ -219,9 +221,39 @@
                             </div> -->
                         </div>
                         <a href="Contact.html"
-                          class="flex flex-row items-center hover:text-element_color duration-500 py-2 font-[400] relative ml-2 text-[14px] text-text_color">
+                          class="flex flex-row items-center hover:text-element_color duration-500 py-2 text-[16px] font-raj font-[700] relative ml-2  text-[#fff]">
                           <span class="text-center">CONTACT</span>
                         </a>
+                        <div class="ml-[15px] cursor-pointer flex items-center">
+                            <!-- 2 number switch -->
+
+                            <label
+                            for="toggleFour"
+                            class="flex items-center cursor-pointer select-none text-dark dark:text-white"
+                            >
+                            <div class="relative">
+                               <input
+                                  data-hs-theme-switch
+                                  type="checkbox"
+                                  id="toggleFour"
+                                  class="peer sr-only"
+                                  />
+                               <div
+                                  class="block h-6 rounded-full box bg-[#fff] dark:bg-dark-2 w-12 peer-checked:bg-primary"
+                                  ></div>
+                               <div
+                                  class="absolute flex items-center justify-center w-5 h-5 transition bg-element_color rounded-full dot left-1 top-[2px] dark:bg-dark-5 peer-checked:translate-x-full peer-checked:dark:bg-[#fff]"
+                                  ></div>
+                            </div>
+                         </label>
+
+
+                            <!-- end -->
+
+
+                          
+
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -229,18 +261,25 @@
                     <div class="flex items-center ml-4 md:ml-6">
                       <div @click.away="open = false" class="relative ml-3" x-data="{ open: false }">
                         <div class="flex justify-end gap-4">
-                          <div class="btn-6 cursor-pointer">
-                            GET FREE WORKOUT
-                          </div>
+                          <a href="#_"
+                            class="relative inline-flex items-center justify-center px-6 py-[10px] overflow-hidden font-mono font-medium tracking-tighter text-white bg-element_color group">
+                            <span
+                              class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#000] rounded-full group-hover:w-56 group-hover:h-56"></span>
+                            <span
+                              class="absolute inset-0 w-full h-full -mt-1  opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                            <span
+                              class="relative group-hover:text-[#fff] text-[#fff]  font-raj font-[700] tracking-widest">GET
+                              FREE WORKOUT</span>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="flex -mr-2 lg:hidden transition-all duration-500">
                     <button @click="open = !open"
-                      class="inline-flex items-center justify-center hover:bg-element_color hover:border-element_color transition-all duration-500 hover:bord border rounded-none border-text_color p-[3px] text-text_color hover:text-white hover:bg-sky-600 focus:outline-none focus:bg-sky-600 focus:text-white"
+                      class="inline-flex items-center justify-center hover:bg-element_color hover:border-element_color transition-all duration-500 hover:bord border rounded-none border-[#fff] p-[3px] text-[#fff] hover:text-white hover:bg-sky-600 focus:outline-none focus:bg-sky-600 focus:text-white"
                       x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
-                      <svg class="w-7 h-7" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                         <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex"
                           stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
@@ -251,29 +290,31 @@
                 </div>
               </div>
               <!-- mobile menu start -->
-              <div :class="{'block': open, 'hidden': !open}"
-                class="hidden lg:hidden bg-[#fff] px-0 fixed w-[300px] top-0 h-[100%] transition-all duration-500">
+              <div
+                :class="{'block translate-x-0 transition-all': open, 'hidden z-100 relative translate-x-full': !open}"
+                x-transition
+                class="hidden lg:hidden bg-[#fff] dark:bg-[#000] px-0 fixed w-[300px] top-0 h-[100%] transition-all duration-500">
                 <div class="container">
                   <div class="pt-2 pb-3 flex-col space-y-2">
                     <a href=" "
-                      class="flex flex-row items-center hover:bg-element_color pl-2 hover:text-text_color duration-500 text-[14px] py-2 text-sm font-[400] text-black hover:bg-sky-600 transition-all focus:outline-none focus:text-white focus:bg-sky-600">
+                      class="flex flex-row items-center text-primary dark:text-[#fff]  hover:bg-element_color pl-2 hover:text-element_color duration-500 text-[14px] py-2 text-sm font-[700] text-black hover:bg-sky-600 transition-all focus:outline-none focus:text-white focus:bg-sky-600">
                       <span class="text-[16px]">HOME</span>
                     </a>
                     <a href=" "
-                      class="flex flex-row items-center hover:bg-element_color pl-2 hover:text-text_color duration-500 text-[14px] py-2 text-sm font-[400] text-black hover:bg-sky-600 transition-all focus:outline-none focus:text-white focus:bg-sky-600">
+                      class="flex flex-row items-center hover:bg-element_color text-primary dark:text-[#fff] pl-2 hover:text-text_color duration-500 text-[14px] py-2 text-sm font-[700] text-black hover:bg-sky-600 transition-all focus:outline-none focus:text-white focus:bg-sky-600">
                       <span class="text-[16px]">BLOG</span>
                     </a>
                     <a href=" "
-                      class="flex flex-row items-center hover:bg-element_color pl-2 hover:text-text_color duration-500 text-[14px] py-2 text-sm font-[400] text-black hover:bg-sky-600 transition-all focus:outline-none focus:text-white focus:bg-sky-600">
+                      class="flex flex-row items-center hover:bg-element_color text-primary dark:text-[#fff] pl-2 hover:text-text_color duration-500 text-[14px] py-2 text-sm font-[700] text-black hover:bg-sky-600 transition-all focus:outline-none focus:text-white focus:bg-sky-600">
                       <span class="text-[16px]">ABOUT US</span>
                     </a>
                     <a href=" "
-                      class="flex flex-row items-center hover:bg-element_color pl-2 hover:text-text_color duration-500 text-[14px] py-2 text-sm font-[400] text-black hover:bg-sky-600 transition-all focus:outline-none focus:text-white focus:bg-sky-600">
+                      class="flex flex-row items-center hover:bg-element_color text-primary dark:text-[#fff] pl-2 hover:text-text_color duration-500 text-[14px] py-2 text-sm font-[700] text-black hover:bg-sky-600 transition-all focus:outline-none focus:text-white focus:bg-sky-600">
                       <span class="text-[16px]">COURSE</span>
                     </a>
                     <div class="relative" x-data="{ open: false }">
                       <button @click="open = true"
-                        class="flex flex-row items-center w-full pl-2 hover:bg-element_color hover:text-text_color py-2 mt-1 text-base font-normal text-left text-black hover:text-white hover:bg-sky-600 focus:outline-none focus:text-white focus:bg-sky-600">
+                        class="flex flex-row items-center w-full pl-2 text-primary dark:text-[#fff] hover:bg-element_color hover:text-text_color font-[700] py-2 mt-1 text-base  text-left text-black hover:text-white hover:bg-sky-600 focus:outline-none focus:text-white focus:bg-sky-600">
                         <span class="text-[16px]">TRAINERS</span>
                         <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': open, 'rotate-0': !open}"
                           class="w-5 h-5 mt-1 transform" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -282,25 +323,25 @@
                           <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                       </button>
-                      <div x-show="open" @click.away="open = false" class="px-2 py-2 mt-2 bg-white rounded-md shadow-xs"
+                      <div x-show="open" x-transition @click.away="open = false" class="px-2 py-2 mt-2 bg-white rounded-md shadow-xs"
                         role="menu" aria-orientation="vertical" aria-labelledby="user-menu" role="menuitem">
                         <a href=""
-                          class="flex flex-row items-center px-4 py-2 text-[14px] font-[400] hover:bg-element_color hover:text-text_color text-gray-700 focus:text-gray-900 focus:outline-none focus:bg-gray-100">
+                          class="flex flex-row items-center px-4 text-primary dark:text-[#fff] py-2 text-[14px] font-[400] hover:bg-element_color hover:text-text_color text-gray-700 focus:text-gray-900 focus:outline-none focus:bg-gray-100">
                           Page Number 1
                         </a>
                         <a href=""
-                          class="flex flex-row items-center px-4 py-2 text-[14px] font-[400] hover:bg-element_color hover:text-text_color text-gray-700 focus:text-gray-900 focus:outline-none focus:bg-gray-100">
+                          class="flex flex-row items-center px-4 text-primary dark:text-[#fff] py-2 text-[14px] font-[400] hover:bg-element_color hover:text-text_color text-gray-700 focus:text-gray-900 focus:outline-none focus:bg-gray-100">
                           Page Number 2
                         </a>
                         <a href=""
-                          class="flex flex-row items-center px-4 py-2 text-[14px] font-[400] hover:bg-element_color hover:text-text_color text-gray-700 focus:text-gray-900 focus:outline-none focus:bg-gray-100">
+                          class="flex flex-row items-center px-4 py-2 text-primary dark:text-[#fff] text-[14px] font-[400] hover:bg-element_color hover:text-text_color text-gray-700 focus:text-gray-900 focus:outline-none focus:bg-gray-100">
                           Page Number 3
                         </a>
                       </div>
                     </div>
                     <div class="relative" x-data="{ open: false }">
                       <button @click="open = true"
-                        class="flex flex-row items-center w-full pl-2 hover:bg-element_color hover:text-text_color py-2 mt-1 text-base font-normal text-left text-black hover:text-white hover:bg-sky-600 focus:outline-none focus:text-white focus:bg-sky-600">
+                        class="flex flex-row items-center w-full pl-2 text-primary dark:text-[#fff] hover:bg-element_color hover:text-text_color py-2 mt-1 text-base font-[700] text-left text-black hover:text-white hover:bg-sky-600 focus:outline-none focus:text-white focus:bg-sky-600">
                         <span class="text-[16px]">SERVICE</span>
                         <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': open, 'rotate-0': !open}"
                           class="w-5 h-5 mt-1 transform" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -309,40 +350,68 @@
                           <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                       </button>
-                      <div x-show="open" @click.away="open = false" class="px-2 py-2 mt-2 bg-white rounded-md shadow-xs"
+                      <div x-show="open" x-transition @click.away="open = false" class="px-2 py-2 mt-2 bg-white rounded-md shadow-xs"
                         role="menu" aria-orientation="vertical" aria-labelledby="user-menu" role="menuitem">
                         <a href=""
-                          class="flex flex-row items-center px-4 py-2 text-[14px] font-[400] hover: hover:text-text_color text-gray-700 focus:text-gray-900 focus:outline-none focus:bg-gray-100">
+                          class="flex flex-row items-center text-primary dark:text-[#fff] px-4 py-2 text-[14px] font-[400] hover: hover:text-text_color text-gray-700 focus:text-gray-900 focus:outline-none focus:bg-gray-100">
                           Page Number 1
                         </a>
                         <a href=""
-                          class="flex flex-row items-center px-4 py-2 text-[14px] font-[400] hover: hover:text-text_color text-gray-700 focus:text-gray-900 focus:outline-none focus:bg-gray-100">
+                          class="flex flex-row items-center text-primary dark:text-[#fff] px-4 py-2 text-[14px] font-[400] hover: hover:text-text_color text-gray-700 focus:text-gray-900 focus:outline-none focus:bg-gray-100">
                           Page Number 2
                         </a>
                         <a href=""
-                          class="flex flex-row items-center px-4 py-2 text-[14px] font-[400] hover: hover:text-text_color text-gray-700 focus:text-gray-900 focus:outline-none focus:bg-gray-100">
+                          class="flex flex-row items-center text-primary dark:text-[#fff] px-4 py-2 text-[14px] font-[400] hover: hover:text-text_color text-gray-700 focus:text-gray-900 focus:outline-none focus:bg-gray-100">
                           Page Number 3
                         </a>
                       </div>
                     </div>
                     <a href=" "
-                      class="flex flex-row items-center hover: pl-2 hover:text-text_color duration-500 text-[14px] py-2 text-sm font-[400] text-black hover:bg-sky-600 transition-all focus:outline-none focus:text-white focus:bg-sky-600">
+                      class="flex flex-row items-center hover: pl-2 text-primary hover:bg-element_color dark:text-[#fff] hover:text-text_color duration-500 text-[14px] py-2 text-sm font-[700] text-black hover:bg-sky-600 transition-all focus:outline-none focus:text-white focus:bg-sky-600">
                       <span class="text-[16px]">NUTRITION</span>
                     </a>
                     <a href=" "
-                      class="flex flex-row items-center hover: pl-2 hover:text-text_color duration-500 text-[14px] py-2 text-sm font-[400] text-black hover:bg-sky-600 transition-all focus:outline-none focus:text-white focus:bg-sky-600">
+                      class="flex flex-row items-center text-primary hover:bg-element_color dark:text-[#fff] pl-2 hover:text-text_color duration-500 text-[14px] py-2 text-sm font-[700] text-black hover:bg-sky-600 transition-all focus:outline-none focus:text-white focus:bg-sky-600">
                       <span class="text-[16px]">CONTACT US</span>
                     </a>
                   </div>
+                  <div class="ml-[10px] cursor-pointer flex items-center">
+                    <!-- 2 number switch -->
+
+                    <label
+                    for="toggleFour"
+                    class="flex items-center cursor-pointer select-none text-dark dark:text-white"
+                    >
+                    <div class="relative">
+                       <input
+                          data-hs-theme-switch
+                          type="checkbox"
+                          id="toggleFour"
+                          class="peer sr-only"
+                          />
+                       <div
+                          class="block h-6 rounded-full box bg-[#dbdbdb] dark:bg-dark-2 w-12 peer-checked:bg-primary"
+                          ></div>
+                       <div
+                          class="absolute flex items-center justify-center w-5 h-5 transition bg-element_color rounded-full dot left-1 top-[2px] dark:bg-dark-5 peer-checked:translate-x-full peer-checked:dark:bg-[#fff]"
+                          ></div>
+                    </div>
+                 </label>
+
                 </div>
-                <div class="container px-6 mx-auto">
+                <div class="ml-[10px]">
                   <div x-data="{ open: false }" class="py-4">
                     <button @click="open = true" class="flex items-center w-full focus:outline-none">
                       <div class="flex items-center w-full">
                         <div class="flex-shrink-0">
-                          <div class="btn-7 cursor-pointer">
-                            GET FREE WORKOUT
-                          </div>
+                          <a href="#_"
+                            class="relative inline-flex items-center justify-center px-6 py-[10px] overflow-hidden font-mono font-medium tracking-tighter text-white bg-element_color group">
+                            <span
+                              class="absolute w-0 h-0 transition-all duration-500 ease-out bg-primary rounded-full group-hover:w-56 group-hover:h-56"></span>
+                            <span
+                              class="absolute inset-0 w-full h-full -mt-1  opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                            <span class="relative group-hover:text-[#fff] text-[#fff] font-[700] traking-widest">GET FREE WORKOUT</span>
+                          </a>
                         </div>
                       </div>
                     </button>
@@ -353,31 +422,31 @@
           </div>
         </section>
         <!-- end mid header -->
+        
       </header>
-
-      <div class="container heros_text_content pt-[150px] pb-[150px]">
-        <div class="md:m-auto text-left md:text-center flex-col space-y-[30px] w-[100%] md:w-[70%]">
-          <h1 class="text-[30px] w-full sm:text-[40px] md:text-[56px] font-[700] font-oswald text-text_color">
-            The Perfect Gym
-            <span class="text-element_color">For Healthy Life</span>
+       
+      <div class="container heros_text_content pt-[180px] pb-[220px] relative">
+        
+        <div class="md:m-auto text-left  flex-col  w-[100%]">
+          <h3 data-aos="fade-right" data-aos-duration="1000" class="tracking-widest text-[#fff] text-[22px] font-bold">
+            THE RUNNER'S LIFE</h3>
+          <h1 data-aos="fade-left" data-aos-duration="1000"
+            class="text-[40px] uppercase w-full sm:[70px] md:text-[80px] tracking-widest font-[700] font-raj text-[#fff]">
+            <span class="text-element_color">
+              THE BEST FITNESS
+            </span><br />
+            STUDIO IN TOWN
           </h1>
-          <p class="text-text_color text-[14px] mb-[15px] font-[300]">
-            Lorem Ipsum is simply dummy text of the printing printer took a
-            galley of type and scrambled it to make Lorem Ipsum is simply
-            dummy text of the printing printer took a galley. Lorem Ipsum is
-            simply dummy text of the printing printer took a galley of type
-            and scrambled it to make Lorem Ipsum is simply dummy text of the
-            printing printer took a galley.
-          </p>
-          <div class="items-center flex space-x-4 md:justify-center">
-            <button
-              class="border uppercase border-element_color bg-element_color duration-500 font-[400] px-[6px] md:px-[12px] py-[5px] md:py-[9px] text-[12px] md:text-[16px] text-text_color hover:bg-opacity-0 hover:transition-all">
-              Free Tranning Session
-            </button>
-            <button
-              class="border uppercase border-element_color duration-500 font-[400] px-[35px] md:px-[50px] py-[5px] md:py-[9px] text-[12px] md:text-[16px] text-text_color hover:bg-element_color transition-all md:ml-[14px]">
-              Learn More
-            </button>
+          <div class="items-center flex   z-10">
+            <a href="#_"
+              class="relative inline-flex items-center justify-center px-6 py-[10px] overflow-hidden font-mono font-medium tracking-tighter text-white bg-element_color group">
+              <span
+                class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#000] rounded-full group-hover:w-56 group-hover:h-56"></span>
+              <span
+                class="absolute inset-0 w-full h-full -mt-1  opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+              <span class="relative group-hover:text-[#fff] text-[#fff]  font-raj font-[700] tracking-widest">FREE
+                SESSION</span>
+            </a>
           </div>
         </div>
       </div>
@@ -390,67 +459,67 @@
       <section class="workout_program text-text_color mt-[80px] mb-[140px]">
         <div class="container">
           <div>
-            <h1 class="text-[22px] sm:text-[35px] font-[500] text-center">
-              4- Week Beginner’s Workout Program
+            <h1 class="text-[22px] sm:text-[35px] font-[700] text-center">
+              <span class="text-element_color">4- Week Beginner’s</span> <span class="text-primary dark:text-[#fff]">Workout Program</span>
             </h1>
           </div>
           <div class="w-full h-[2px] bg-[#737373] mt-[100px] mb-[100px] flex flex-row justify-between items-center">
             <div class="text-center -mt-[] space-y-2 sm:space-y-4 flex-col ml-[30px]">
-              <p class="text-center text-[17px] sm:text-[25px] font-[300]">
+              <p class="text-center text-primary dark:text-[#fff] text-[15px] sm:text-[25px] font-[500]">
                 Mon
               </p>
               <div
-                class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] border-2 border-element_color text-center m-auto bg-element_color rounded-full">
+                class="w-[25px] sm:w-[40px] h-[25px] sm:h-[40px] border-2 border-element_color text-center m-auto bg-element_color rounded-full">
               </div>
-              <p class="text-center text-[17px] sm:text-[25px] font-[300]">
+              <p class="text-center text-[15px] sm:text-[25px] font-[500] text-primary dark:text-[#fff]">
                 CrossFit
               </p>
             </div>
 
             <div class="text-center -mt-[32px] sm:-mt-[52px] space-y-2 sm:space-y-4 flex-col">
-              <p class="text-center text-[17px] sm:text-[25px] font-[300]">
+              <p class="text-center text-[15px] sm:text-[25px] font-[500] text-primary dark:text-[#fff]">
                 Tue
               </p>
               <div
-                class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] border-2 border-text_color text-center m-auto bg-[#000] rounded-full">
+                class="w-[25px] sm:w-[40px] h-[25px] sm:h-[40px] border-2 border-text_color text-center m-auto bg-[#000] rounded-full">
               </div>
             </div>
 
             <div class="text-center -mt-[] space-y-2 sm:space-y-4 flex-col">
-              <p class="text-center text-[17px] sm:text-[25px] font-[300]">
+              <p class="text-center text-[15px] sm:text-[25px] font-[500] text-primary dark:text-[#fff]">
                 Wed
               </p>
               <div
-                class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] border-2 border-element_color text-center m-auto bg-element_color rounded-full">
+                class="w-[25px] sm:w-[40px] h-[25px] sm:h-[40px] border-2 border-element_color text-center m-auto bg-element_color rounded-full">
               </div>
-              <p class="text-center text-[17px] sm:text-[25px] font-[300]">
+              <p class="text-center text-[15px] sm:text-[25px] font-[500] text-primary dark:text-[#fff]">
                 Running
               </p>
             </div>
 
             <div class="text-center -mt-[32px] sm:-mt-[52px] space-y-2 sm:space-y-4 flex-col">
-              <p class="text-center text-[17px] sm:text-[25px] font-[300]">
+              <p class="text-center text-[15px] sm:text-[25px] font-[500] text-primary dark:text-[#fff]">
                 Thu
               </p>
               <div
-                class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] border-2 border-text_color text-center m-auto bg-[#000] rounded-full">
+                class="w-[25px] sm:w-[40px] h-[25px] sm:h-[40px] border-2 border-text_color text-center m-auto bg-[#000] rounded-full">
               </div>
             </div>
 
             <div class="text-center -mt-[] space-y-2 sm:space-y-4 flex-col">
-              <p class="text-center text-[17px] sm:text-[25px] font-[300]">
+              <p class="text-center text-[15px] sm:text-[25px] font-[500] text-primary dark:text-[#fff]">
                 Fri
               </p>
               <div
-                class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] border-2 border-element_color text-center m-auto bg-element_color rounded-full">
+                class="w-[25px] sm:w-[40px] h-[25px] sm:h-[40px] border-2 border-element_color text-center m-auto bg-element_color rounded-full">
               </div>
-              <p class="text-center text-[17px] sm:text-[25px] font-[300]">
+              <p class="text-center text-[15px] sm:text-[25px] font-[500] text-primary dark:text-[#fff]">
                 Crossfit + Running
               </p>
             </div>
           </div>
           <div>
-            <p class="font-[100] text-center sm:text-left">
+            <p class="font-[700] tracking-wider text-center sm:text-left text-primary dark:text-[#fff]">
               It has survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged. Lorem
               Ipsum is simply dummy text of the printing and typesetting
@@ -462,33 +531,33 @@
         </div>
       </section>
       <!-- about section -->
-      <section class="about text-text_color mb-[100px]">
-        <div class="container flex md:flex-row flex-col items-center">
+      <section class="about text-text_color mb-[100px] relative overflow-hidden">
+        <div class="container flex md:flex-row flex-col items-center relative z-20">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 relative">
-            <img class="object-cover object-center relative z-20" alt="hero" src="./public/image/about.png" />
+            <img class="object-cover object-center relative z-20" alt="hero" src="./public/image/about.jpg" />
             <div class="border-2 border-element_color w-full h-full z-10 bord -top-[40px] -left-[40px] absolute"></div>
           </div>
           <div
             class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              Personal Training
-              <span class="text-element_color">Gym in NY</span>
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-[700] text-gray-900">
+              <span class="text-primary dark:text-[#fff]">Personal Training</span>
+              <span class="">Gym in NY</span>
             </h1>
-            <p class="mb-8 leading-relaxed">
+            <p class="mb-8 leading-relaxed font-[700] tracking-wider text-[16px] font-roboto text-primary dark:text-[#fff]">
               Copper mug try-hard pitchfork pour-over freegan heirloom neutra
               air plant cold-pressed tacos poke beard tote bag. Heirloom echo
               park mlkshk tote bag selvage hot chicken authentic tumeric
               truffaut hexagon try-hard chambray.
             </p>
 
-            <p class="mb-8 leading-relaxed">
+            <p class="mb-8 leading-relaxed font-[700] tracking-wider text-primary dark:text-[#fff]">
               Copper mug try-hard pitchfork pour-over freegan heirloom neutra
               air plant cold-pressed tacos poke beard tote bag. Heirloom echo
               park mlkshk tote bag selvage hot chicken authentic tumeric
               truffaut hexagon try-hard chambray.
             </p>
 
-            <p class="mb-8 leading-relaxed">
+            <p class="mb-8 leading-relaxed font-[700] tracking-wider text-primary dark:text-[#fff]">
               Copper mug try-hard pitchfork pour-over freegan heirloom neutra
               air plant cold-pressed tacos poke beard tote bag. Heirloom echo
               park mlkshk tote bag selvage hot chicken authentic tumeric
@@ -497,36 +566,39 @@
 
             <div class="flex justify-center">
               <button
-                class="inline-flex transition-all hover: hover:text-text_color hover:bg-element_color hover:border-element_color border text-element_color uppercase py-2 px-14 text-[16px] font-[400] focus:outline-none">
+                class="inline-flex transition-all font-[700] tracking-wider hover:  hover:bg-element_color hover:text-[#fff] hover:border-element_color border text-element_color uppercase py-2 px-14 text-[16px]  focus:outline-none">
                 About Us
               </button>
             </div>
           </div>
         </div>
+        <div  data-aos="fade-down"
+        data-aos-duration="1000" class="w-[600px] h-[600px] bg-[#3fbae7] -right-24 -top-24 rounded-full absolute   z-10"></div>
       </section>
       <!-- gallary section start -->
       <section class="text-gray-600 text-text_color mb-[100px]">
         <div class="container px-5 mx-auto">
           <div class="flex flex-col text-center w-full mb-10">
             <h1 class="text-[30px] md:text-[45px] font-[700] title-font mb-4 tracking-widest">
-              Our <span class="text-element_color">Gallary</span>
+              <span class="text-primary dark:text-[#fff]">Our</span> <span class="text-element_color">Gallary</span>
             </h1>
           </div>
           <div class="flex flex-wrap -m-4">
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up"
+            data-aos-duration="1000">
               <div class="flex relative group overflow-hidden cursor-pointer">
                 <img alt="gallery"
                   class="relative transition-all duration-300 ease-in inset-0 w-full h-full object-cover object-center"
                   src="./public/image/g1.png" />
                 <div
-                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#ff7a24a8] absolute group z-10 w-full border-gray-200 bg-white">
+                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#1990ada8] absolute group z-10 w-full border-gray-200 bg-white">
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[10px] top-[10px]"></div>
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[30px] top-[30px]"></div>
-                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1">
+                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1 text-[#fff]">
                     THE SUBTITLE
                   </h2>
-                  <h1 class="text-[18px] font-[500] mb-3">Shooting Stars</h1>
-                  <p class="text-[16px] font-[100] tracking-wider">
+                  <h1 class="text-[18px] font-[700] mb-3  text-[#fff]">Shooting Stars</h1>
+                  <p class="text-[15px] font-[700] tracking-wider text-[#fff]">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
@@ -534,20 +606,21 @@
               </div>
             </div>
 
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up"
+            data-aos-duration="1000">
               <div class="flex relative group overflow-hidden cursor-pointer">
                 <img alt="gallery"
                   class="relative transition-all duration-300 ease-in inset-0 w-full h-full object-cover object-center"
                   src="./public/image/g2.png" />
                 <div
-                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#ff7a24a8] absolute group z-10 w-full border-gray-200 bg-white">
+                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#1990ada8] absolute group z-10 w-full border-gray-200 bg-white">
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[10px] top-[10px]"></div>
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[30px] top-[30px]"></div>
-                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1">
+                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1 text-[#fff]">
                     THE SUBTITLE
                   </h2>
-                  <h1 class="text-[18px] font-[500] mb-3">Shooting Stars</h1>
-                  <p class="text-[16px] font-[100] tracking-wider">
+                  <h1 class="text-[18px] font-[700] mb-3 text-[#fff]">Shooting Stars</h1>
+                  <p class="text-[15px] font-[700] tracking-wider text-[#fff]">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
@@ -555,20 +628,21 @@
               </div>
             </div>
 
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up"
+            data-aos-duration="1000">
               <div class="flex relative group overflow-hidden cursor-pointer">
                 <img alt="gallery"
                   class="relative transition-all duration-300 ease-in inset-0 w-full h-full object-cover object-center"
                   src="./public/image/g5.png" />
                 <div
-                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#ff7a24a8] absolute group z-10 w-full border-gray-200 bg-white">
+                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#1990ada8] absolute group z-10 w-full border-gray-200 bg-white">
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[10px] top-[10px]"></div>
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[30px] top-[30px]"></div>
-                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1">
+                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1 text-[#fff]">
                     THE SUBTITLE
                   </h2>
-                  <h1 class="text-[18px] font-[500] mb-3">Shooting Stars</h1>
-                  <p class="text-[16px] font-[100] tracking-wider">
+                  <h1 class="text-[18px] font-[700] mb-3 text-[#fff]">Shooting Stars</h1>
+                  <p class="text-[15px] font-[700] tracking-wider text-[#fff]">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
@@ -576,20 +650,21 @@
               </div>
             </div>
 
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up"
+            data-aos-duration="1000">
               <div class="flex relative group overflow-hidden cursor-pointer">
                 <img alt="gallery"
                   class="relative transition-all duration-300 ease-in inset-0 w-full h-full object-cover object-center"
                   src="./public/image/g4.png" />
                 <div
-                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#ff7a24a8] absolute group z-10 w-full border-gray-200 bg-white">
+                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#1990ada8] absolute group z-10 w-full border-gray-200 bg-white">
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[10px] top-[10px]"></div>
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[30px] top-[30px]"></div>
-                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1">
+                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1 text-[#fff]">
                     THE SUBTITLE
                   </h2>
-                  <h1 class="text-[18px] font-[500] mb-3">Shooting Stars</h1>
-                  <p class="text-[16px] font-[100] tracking-wider">
+                  <h1 class="text-[18px] font-[700] mb-3 text-[#fff]">Shooting Stars</h1>
+                  <p class="text-[15px] font-[700] tracking-wider text-[#fff]">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
@@ -597,20 +672,21 @@
               </div>
             </div>
 
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up"
+            data-aos-duration="1000">
               <div class="flex relative group overflow-hidden cursor-pointer">
                 <img alt="gallery"
                   class="relative transition-all duration-300 ease-in inset-0 w-full h-full object-cover object-center"
                   src="./public/image/g5.png" />
                 <div
-                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#ff7a24a8] absolute group z-10 w-full border-gray-200 bg-white">
+                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#1990ada8] absolute group z-10 w-full border-gray-200 bg-white">
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[10px] top-[10px]"></div>
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[30px] top-[30px]"></div>
-                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1">
+                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1 text-[#fff]">
                     THE SUBTITLE
                   </h2>
-                  <h1 class="text-[18px] font-[500] mb-3">Shooting Stars</h1>
-                  <p class="text-[16px] font-[100] tracking-wider">
+                  <h1 class="text-[18px] font-[700] mb-3 text-[#fff]">Shooting Stars</h1>
+                  <p class="text-[15px] font-[700] tracking-wider text-[#fff]">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
@@ -618,20 +694,21 @@
               </div>
             </div>
 
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up"
+            data-aos-duration="1000">
               <div class="flex relative group overflow-hidden cursor-pointer">
                 <img alt="gallery"
                   class="relative transition-all duration-300 ease-in inset-0 w-full h-full object-cover object-center"
                   src="./public/image/g6.png" />
                 <div
-                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#ff7a24a8] absolute group z-10 w-full border-gray-200 bg-white">
+                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#1990ada8] absolute group z-10 w-full border-gray-200 bg-white">
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[10px] top-[10px]"></div>
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[30px] top-[30px]"></div>
-                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1">
+                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1 text-[#fff]">
                     THE SUBTITLE
                   </h2>
-                  <h1 class="text-[18px] font-[500] mb-3">Shooting Stars</h1>
-                  <p class="text-[16px] font-[100] tracking-wider">
+                  <h1 class="text-[18px] font-[700] mb-3 text-[#fff]">Shooting Stars</h1>
+                  <p class="text-[15px] font-[100] tracking-wider text-[#fff]">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
@@ -639,20 +716,21 @@
               </div>
             </div>
 
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up"
+            data-aos-duration="1000">
               <div class="flex relative group overflow-hidden cursor-pointer">
                 <img alt="gallery"
                   class="relative transition-all duration-300 ease-in inset-0 w-full h-full object-cover object-center"
                   src="./public/image/g7.png" />
                 <div
-                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#ff7a24a8] absolute group z-10 w-full border-gray-200 bg-white">
+                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#1990ada8] absolute group z-10 w-full border-gray-200 bg-white">
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[10px] top-[10px]"></div>
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[30px] top-[30px]"></div>
-                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1">
+                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1 text-[#fff]">
                     THE SUBTITLE
                   </h2>
-                  <h1 class="text-[18px] font-[500] mb-3">Shooting Stars</h1>
-                  <p class="text-[16px] font-[100] tracking-wider">
+                  <h1 class="text-[18px] font-[700] mb-3 text-[#fff]">Shooting Stars</h1>
+                  <p class="text-[15px] font-[700] tracking-wider text-[#fff]">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
@@ -660,20 +738,21 @@
               </div>
             </div>
 
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up"
+            data-aos-duration="1000">
               <div class="flex relative group overflow-hidden cursor-pointer">
                 <img alt="gallery"
                   class="relative transition-all duration-300 ease-in inset-0 w-full h-full object-cover object-center"
                   src="./public/image/g8.png" />
                 <div
-                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#ff7a24a8] absolute group z-10 w-full border-gray-200 bg-white">
+                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#1990ada8] absolute group z-10 w-full border-gray-200 bg-white">
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[10px] top-[10px]"></div>
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[30px] top-[30px]"></div>
-                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1">
+                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1 text-[#fff]">
                     THE SUBTITLE
                   </h2>
-                  <h1 class="text-[18px] font-[500] mb-3">Shooting Stars</h1>
-                  <p class="text-[16px] font-[100] tracking-wider">
+                  <h1 class="text-[18px] font-[700] mb-3 text-[#fff]">Shooting Stars</h1>
+                  <p class="text-[15px] font-[700] tracking-wider text-[#fff]">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
@@ -681,20 +760,21 @@
               </div>
             </div>
 
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
+            <div class="lg:w-1/3 sm:w-1/2 p-4" data-aos="fade-up"
+            data-aos-duration="1000">
               <div class="flex relative group overflow-hidden cursor-pointer">
                 <img alt="gallery"
                   class="relative transition-all duration-300 ease-in inset-0 w-full h-full object-cover object-center"
                   src="./public/image/g9.png" />
                 <div
-                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#ff7a24a8] absolute group z-10 w-full border-gray-200 bg-white">
+                  class="px-8 py-10 top-[250px] opacity-0 group-hover:opacity-100 group-hover:top-0 h-full transition-all ease-in-out duration-500 bg-gradient-to-r from-[#000000d4] to-[#1990ada8] absolute group z-10 w-full border-gray-200 bg-white">
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[10px] top-[10px]"></div>
                   <div class="w-[50px] h-[50px] rounded-sm absolute right-[30px] top-[30px]"></div>
-                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1">
+                  <h2 class="tracking-wider text-[20px] font-[700] text-indigo-500 mb-1 text-[#fff]">
                     THE SUBTITLE
                   </h2>
-                  <h1 class="text-[18px] font-[500] mb-3">Shooting Stars</h1>
-                  <p class="text-[16px] font-[100] tracking-wider">
+                  <h1 class="text-[18px] font-[700] mb-3 text-[#fff]">Shooting Stars</h1>
+                  <p class="text-[15px] font-[700] tracking-wider text-[#fff]">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
@@ -711,78 +791,90 @@
         <div class="container px-5 mx-auto">
           <div class="flex flex-col text-center w-full mb-10">
             <h1 class="text-[30px] md:text-[45px] font-[700] title-font mb-4 tracking-widest">
-              The Best Personal
+              <span class="text-primary dark:text-[#fff]">The Best Personal</span>
               <span class="text-element_color">Trainer Service</span>
             </h1>
           </div>
-          <div class="flex flex-wrap -m-2">
+          <div class="flex flex-wrap -m-2" data-aos="fade-up"
+          data-aos-duration="1000">
             <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border border-element_color p-4">
+              <div class="h-[200px] flex items-center border-gray-200 border bg-element_color dark:bg-primary border-element_color p-4">
                 <img alt="team" class="bg-gray-100 object-cover object-center flex-shrink-0  mr-4"
                   src="./public/image/service/service1.png">
                 <div class="flex-grow space-y-[10px]">
-                  <h2 class="text-text_color text-[22px] tracking-widest font-[700]">Trainers</h2>
-                  <p class="text-text_color text-[14px] font-[300]">Lorem ipsum dolor, sit amet consectetur adipisicing
+                  <h2 class="text-[#fff] text-[24px] tracking-widest font-[700]">Trainers</h2>
+                  <p class="text-[#fff]  text-[15px] font-[700] traking-wider">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing
                     elit. Quos magni delectus, ullam voluptates nobis culpa labore velit necessitatibus error obcaecati.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border border-element_color p-4">
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-aos="fade-up"
+            data-aos-duration="1000">
+              <div class="h-[200px] flex items-center border-gray-200 border bg-element_color dark:bg-primary border-element_color p-4">
                 <img alt="team" class="bg-gray-100 object-cover object-center flex-shrink-0  mr-4"
                   src="./public/image/service/service2.png">
                 <div class="flex-grow space-y-[10px]">
-                  <h2 class="text-text_color text-[22px] tracking-widest font-[700]">Fitness Expert</h2>
-                  <p class="text-text_color text-[14px] font-[300]">Lorem ipsum dolor, sit amet consectetur adipisicing
+                  <h2 class="text-[#fff] text-[24px] tracking-widest font-[700]">Fitness Expert</h2>
+                  <p class="text-[#fff]  text-[15px] font-[700] traking-wider">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing
                     elit. Quos magni delectus, ullam voluptates nobis culpa labore velit necessitatibus error obcaecati.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border border-element_color p-4">
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full" data-aos="fade-up"
+            data-aos-duration="1000">
+              <div class="h-[200px] flex items-center border-gray-200 border bg-element_color dark:bg-primary border-element_color p-4">
                 <img alt="team" class="bg-gray-100 object-cover object-center flex-shrink-0  mr-4"
                   src="./public/image/service/service3.png">
                 <div class="flex-grow space-y-[10px]">
-                  <h2 class="text-text_color text-[22px] tracking-widest font-[700]">In-Home Fitness</h2>
-                  <p class="text-text_color text-[14px] font-[300]">Lorem ipsum dolor, sit amet consectetur adipisicing
+                  <h2 class="text-[#fff] text-[24px] tracking-widest font-[700]">In-Home Fitness</h2>
+                  <p class="text-[#fff]  text-[15px] font-[700] traking-wider">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing
                     elit. Quos magni delectus, ullam voluptates nobis culpa labore velit necessitatibus error obcaecati.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full mt-[10px]">
-              <div class="h-full flex items-center border-gray-200 border border-element_color p-4">
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full mt-[10px]" data-aos="fade-up"
+            data-aos-duration="1000">
+              <div class="h-[200px] flex items-center border-gray-200 border bg-element_color dark:bg-primary border-element_color p-4">
                 <img alt="team" class="bg-gray-100 object-cover object-center flex-shrink-0  mr-4"
                   src="./public/image/service/service4.png">
                 <div class="flex-grow space-y-[10px]">
-                  <h2 class="text-text_color text-[22px] tracking-widest font-[700]">Strength & Condition</h2>
-                  <p class="text-text_color text-[14px] font-[300]">Lorem ipsum dolor, sit amet consectetur adipisicing
+                  <h2 class="text-[#fff] text-[24px] tracking-widest font-[700]">Strength & Condition</h2>
+                  <p class="text-[#fff]  text-[15px] font-[700] traking-wider">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing
                     elit. Quos magni delectus, ullam voluptates nobis culpa labore velit necessitatibus error obcaecati.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full mt-[10px]">
-              <div class="h-full flex items-center border-gray-200 border border-element_color p-4">
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full mt-[10px]" data-aos="fade-up"
+            data-aos-duration="1000">
+              <div class="h-[200px] flex items-center border-gray-200 border bg-element_color dark:bg-primary border-element_color p-4">
                 <img alt="team" class="bg-gray-100 object-cover object-center flex-shrink-0  mr-4"
                   src="./public/image/service/service5.png">
                 <div class="flex-grow space-y-[10px]">
-                  <h2 class="text-text_color text-[22px] tracking-widest font-[700]">Rehabilitation</h2>
-                  <p class="text-text_color text-[14px] font-[300]">Lorem ipsum dolor, sit amet consectetur adipisicing
+                  <h2 class="text-[#fff] text-[24px] tracking-widest font-[700]">Rehabilitation</h2>
+                  <p class="text-[#fff]  text-[15px] font-[700] traking-wider">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing
                     elit. Quos magni delectus, ullam voluptates nobis culpa labore velit necessitatibus error obcaecati.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full mt-[10px]">
-              <div class="h-full flex items-center border-gray-200 border border-element_color p-4">
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full mt-[10px]" data-aos="fade-up"
+            data-aos-duration="1000">
+              <div class="h-[200px] flex items-center border-gray-200 border bg-element_color dark:bg-primary border-element_color p-4">
                 <img alt="team" class="bg-gray-100 object-cover object-center flex-shrink-0  mr-4"
                   src="./public/image/service/service6.png">
                 <div class="flex-grow space-y-[10px]">
-                  <h2 class="text-text_color text-[22px] tracking-widest font-[700]">Weight Loss</h2>
-                  <p class="text-text_color text-[14px] font-[300]">Lorem ipsum dolor, sit amet consectetur adipisicing
+                  <h2 class="text-[#fff] text-[24px] tracking-widest font-[700]">Weight Loss</h2>
+                  <p class="text-[#fff]  text-[15px] font-[700] traking-wider">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing
                     elit. Quos magni delectus, ullam voluptates nobis culpa labore velit necessitatibus error obcaecati.
                   </p>
                 </div>
@@ -800,41 +892,47 @@
     <div class="container px-5 mx-auto">
       <div class="flex flex-col text-center w-full mb-10">
         <h1 class="text-[30px] md:text-[45px] font-[700] title-font mb-4 tracking-widest">
-          Our Expert
+          <span class="text-primary dark:text-[#fff]"> Our Expert</span>
           <span class="text-element_color">Trainers</span>
         </h1>
       </div>
-      <div class="mx-auto mt-[180px]">
+      <div class="mx-auto  md:mt-[180px]">
         <div class="flex flex-wrap -m-4">
-          <div class="p-4 md:w-1/3">
+          <div class="p-4 md:w-1/3" data-aos="fade-up"
+          data-aos-duration="1000">
             <div class="h-full  border-opacity-60 rounded-lg overflow-hidden">
               <img class="object-cover w-[280px]  m-auto h-2[200px] object-center"
                 src="./public/image/tainer/tainer1.png" alt="blog">
               <div class="p-6 text-center">
-                <h1 class="text-[32px] font-[700] text-gray-900 mb-3">Hillel Perper</h1>
-                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                <h1 class="text-[32px] font-[700] text-gray-900 mb-3 text-primary dark:text-[#fff]">Hillel Perper</h1>
+                <p class="leading-relaxed mb-3 font-[700] traking-wider text-primary dark:text-[#fff]">Photo booth fam kinfolk cold-pressed sriracha
+                  leggings jianbing
                   microdosing tousled waistcoat.</p>
               </div>
             </div>
           </div>
-          <div class="p-4 md:w-1/3 md:-mt-[140px]">
+          <div class="p-4 md:w-1/3  md:-mt-[140px]" data-aos="fade-up"
+          data-aos-duration="1000">
             <div class="h-full  border-opacity-60 rounded-lg overflow-hidden">
               <img class="object-cover w-[280px]  m-auto h-2[200px] object-center"
                 src="./public/image/tainer/tainer2.png" alt="blog">
               <div class="p-6 text-center">
                 <h1 class="text-[32px] font-[700] text-gray-900 mb-3 text-element_color">Alex Rios</h1>
-                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                <p class="leading-relaxed mb-3 font-[700] traking-wider text-primary dark:text-[#fff]">Photo booth fam kinfolk cold-pressed sriracha
+                  leggings jianbing
                   microdosing tousled waistcoat.</p>
               </div>
             </div>
           </div>
-          <div class="p-4 md:w-1/3">
+          <div class="p-4 md:w-1/3" data-aos="fade-up"
+          data-aos-duration="1000">
             <div class="h-full  border-opacity-60 rounded-lg overflow-hidden">
               <img class="object-cover w-[280px]  m-auto h-2[200px] object-center"
                 src="./public/image/tainer/tainer3.png" alt="blog">
               <div class="p-6 text-center">
-                <h1 class="text-[32px] font-[700] text-gray-900 mb-3 ">Jason Goris</h1>
-                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+                <h1 class="text-[32px] font-[700] text-gray-900 mb-3 text-primary dark:text-[#fff]">Jason Goris</h1>
+                <p class="leading-relaxed mb-3 font-[700] traking-wider text-primary dark:text-[#fff]">Photo booth fam kinfolk cold-pressed sriracha
+                  leggings jianbing
                   microdosing tousled waistcoat.</p>
               </div>
             </div>
@@ -842,9 +940,10 @@
         </div>
       </div>
 
-      <div class="flex justify-center">
+      <div class="flex justify-center" data-aos="fade-up"
+      data-aos-duration="1000">
         <button
-          class="inline-flex transition-all hover: hover:text-text_color hover:bg-element_color hover:border-element_color border text-element_color uppercase py-2 px-14 text-[16px] font-[400] focus:outline-none">
+          class="inline-flex transition-all hover: hover:text-[#fff] hover:bg-element_color hover:border-element_color border text-element_color uppercase py-2 px-14 text-[16px] font-[700] focus:outline-none">
           Show More
         </button>
       </div>
@@ -856,53 +955,57 @@
 
   <!-- transform section -->
 
-  <section class="text-gray-600 text-text_color mb-[100px]">
-    <div class="container px-5 mx-auto">
+  <section class=" text-text_color mb-[100px]">
+    <div class="container">
       <div class="flex flex-col  w-full mb-10">
         <h1 class="text-[30px] md:text-[45px] font-[700] title-font mb-4 tracking-widest">
-         See Our Transformation
+          <span class="text-primary dark:text-[#fff]">See Our Transformation</span>
           <span class="text-element_color">By Personal Trainer</span>
         </h1>
       </div>
-      <div class="mx-auto mt-[20px]">
+      <div class="mt-[20px]">
         <div class="flex flex-wrap -m-4">
-          <div class="md:w-1/4 shadow-lg rounded-sm bg-[#000000]">
+          <div class="md:w-1/4 m-auto  rounded-sm" data-aos="fade-up"
+          data-aos-duration="1000">
             <div class="h-full  border-opacity-60 rounded-sm  overflow-hidden">
               <img class="object-cover w-[280px] border-2 border-element_color  m-auto h-[200px] object-center"
                 src="./public/image/body-1.jpg" alt="blog">
               <div class="p-6 text-center">
-                <h1 class="text-[22px] font-[700] text-gray-900 mb-3">Hillel Perper</h1>
-                <p class="leading-relaxed mb-3 text-element_color">Photo booth fam kinfolk</p>
+                <h1 class="text-[22px] font-[700] text-gray-900 mb-3 text-primary dark:text-[#fff]">Hillel Perper</h1>
+                <p class="leading-relaxed mb-3 text-element_color font-[700] text-wider">Photo booth fam kinfolk</p>
               </div>
             </div>
           </div>
-          <div class="md:w-1/4 shadow-lg rounded-sm bg-[#000000]">
+          <div class="md:w-1/4  m-auto  rounded-sm " data-aos="fade-up"
+          data-aos-duration="1000">
             <div class="h-full  border-opacity-60  overflow-hidden">
               <img class="object-cover w-[280px] border-2 border-element_color  m-auto h-[200px] object-center"
                 src="./public/image/body-2.jpg" alt="blog">
               <div class="p-6 text-center">
-                <h1 class="text-[22px] font-[700] text-gray-900 mb-3">Jhon Marques</h1>
-                <p class="leading-relaxed mb-3 text-element_color">Photo booth fam kinfolk</p>
+                <h1 class="text-[22px] font-[700] text-gray-900 mb-3 text-primary dark:text-[#fff]">Jhon Marques</h1>
+                <p class="leading-relaxed mb-3 text-element_color font-[700] text-wider">Photo booth fam kinfolk</p>
               </div>
             </div>
           </div>
-          <div class="md:w-1/4 shadow-lg rounded-sm bg-[#000000]">
+          <div class="md:w-1/4  m-auto  rounded-sm " data-aos="fade-up"
+          data-aos-duration="1000">
             <div class="h-full  border-opacity-60  overflow-hidden">
               <img class="object-cover w-[280px] border-2 border-element_color m-auto h-[200px] object-center"
                 src="./public/image/body-3.jpg" alt="blog">
               <div class="p-6 text-center">
-                <h1 class="text-[22px] font-[700] text-gray-900 mb-3">Hillel Perper</h1>
-                <p class="leading-relaxed mb-3 text-element_color">Photo booth fam kinfolk</p>
+                <h1 class="text-[22px] font-[700] text-gray-900 mb-3 text-primary dark:text-[#fff]">Hillel Perper</h1>
+                <p class="leading-relaxed mb-3 text-element_color font-[700] text-wider">Photo booth fam kinfolk</p>
               </div>
             </div>
           </div>
-          <div class="md:w-1/4 shadow-lg rounded-sm bg-[#000000]">
+          <div class="md:w-1/4  m-auto  rounded-sm " data-aos="fade-up"
+          data-aos-duration="1000">
             <div class="h-full  border-opacity-60 overflow-hidden">
               <img class="object-cover w-[280px] border-2 border-element_color m-auto h-[200px] object-center"
                 src="./public/image/body-1.jpg" alt="blog">
               <div class="p-6 text-center">
-                <h1 class="text-[22px] font-[700] text-gray-900 mb-3">Hillel Perper</h1>
-                <p class="leading-relaxed mb-3 text-element_color">Photo booth fam kinfolk</p>
+                <h1 class="text-[22px] font-[700] text-gray-900 mb-3 text-primary dark:text-[#fff]">Hillel Perper</h1>
+                <p class="leading-relaxed mb-3 text-element_color font-[700] text-wider">Photo booth fam kinfolk</p>
               </div>
             </div>
           </div>
@@ -923,15 +1026,17 @@
           class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 class="title-font tracking-wide sm:text-5xl text-element_color text-3xl mb-4 font-[700]">Motivation Video
           </h1>
-          <p class="mb-8 tracking-wide  text-[#fff] mt-[15px]">Lorem Ipsum is simply dummy text of the printing and
+          <p class="mb-8 tracking-wider font-[700] text-[#fff] mt-[15px]">Lorem Ipsum is simply dummy text of the
+            printing and
             typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an
             unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <p class="mb-8 tracking-wide leading-relaxed text-[#fff]">Lorem Ipsum is simply dummy text of the printing and
+          <p class="mb-8 tracking-wider font-[700] leading-relaxed text-[#fff]">Lorem Ipsum is simply dummy text of the
+            printing and
             typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an
             unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           <div class="flex justify-center">
             <button
-              class="inline-flex transition-all hover: hover:text-text_color hover:bg-element_color hover:border-element_color border text-element_color uppercase py-2 px-14 text-[16px] font-[400] focus:outline-none">
+              class="inline-flex transition-all hover: hover:text-[#fff] hover:bg-element_color hover:border-element_color border text-element_color uppercase py-2 px-14 text-[16px] font-[700] focus:outline-none">
               Read more
             </button>
           </div>
@@ -959,25 +1064,26 @@
   <!-- end  -->
 
   <!-- why choose us section -->
-  <section class="about text-text_color mb-[100px]">
-    <div class="container flex md:flex-row flex-col space-x-[60px]  items-center">
+  <section class="about text-text_color mb-[100px] relative overflow-hidden">
+    <div class="container flex md:flex-row flex-col space-x-[60px]  items-center relative z-20">
 
       <div class="lg:flex-grow md:w-1/2   flex flex-col md:items-start md:text-left items-center text-center">
-        <h1 class="title-font  text-3xl mb-8 font-bold sm:text-5xl">
+        <h1 class="title-font  text-3xl mb-8 font-bold sm:text-5xl text-primary dark:text-[#fff]">
           Why Choose Us?
         </h1>
         <div class="flex flex-col">
           <div class="flex flex-row items-center space-x-[10px]">
             <div class="bg-element_color p-1 rounded-full hidden md:flex">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
-                stroke="currentColor" class="w-5 h-5">
+                stroke="currentColor" class="w-5 h-5 text-[#fff]">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </div>
             <div class="mt-[40px]">
-              <h3 class="text-[20px] font-[500]">Reasonable Price.</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              <h3 class="text-[20px] font-[700] text-primary dark:text-[#fff]">Reasonable Price.</h3>
+              <p class="traking-wider font-[700] leading-relaxed text-primary dark:text-[#fff]">Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the
                 industry's.</p>
             </div>
           </div>
@@ -985,14 +1091,15 @@
           <div class="flex flex-row items-center space-x-[10px] ">
             <div class="bg-element_color p-1 rounded-full hidden md:flex">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
-                stroke="currentColor" class="w-5 h-5">
+                stroke="currentColor" class="w-5 h-5 text-[#fff]">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </div>
             <div class="mt-[40px]">
-              <h3 class="text-[20px] font-[500]">Best Monitoring.</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              <h3 class="text-[20px] font-[700] text-primary dark:text-[#fff]">Best Monitoring.</h3>
+              <p class="traking-wider font-[700] leading-relaxed text-primary dark:text-[#fff]">Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the
                 industry's.</p>
             </div>
           </div>
@@ -1000,14 +1107,15 @@
           <div class="flex flex-row items-center space-x-[10px] mb-[60px]">
             <div class="bg-element_color p-1 rounded-full hidden md:flex">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
-                stroke="currentColor" class="w-5 h-5">
+                stroke="currentColor" class="w-5 h-5 text-[#fff]">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
 
             </div>
             <div class="mt-[40px]">
-              <h3 class="text-[20px] font-[500]">Best Support.</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              <h3 class="text-[20px] font-[700] text-primary dark:text-[#fff]">Best Support.</h3>
+              <p class="traking-wider font-[700] leading-relaxed text-primary dark:text-[#fff]">Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the
                 industry's.</p>
             </div>
           </div>
@@ -1020,6 +1128,8 @@
         <div class="border-2 border-element_color w-full h-full z-10 bord -top-8 left-8  absolute"></div>
       </div>
     </div>
+    <div  data-aos="fade-up"
+    data-aos-duration="1000" class="w-[600px] h-[600px] bg-[#3fbae7] -left-24 -bottom-24 rounded-full absolute   z-10"></div>
   </section>
   <!-- end -->
 
@@ -1029,11 +1139,11 @@
     <div class="container px-5 mx-auto">
       <div class="flex flex-col text-center w-full mb-10">
         <h1 class="text-[30px] md:text-[45px] font-[700] title-font mb-4 tracking-widest">
-          Our Special
+          <span class="text-primary dark:text-[#fff]">Our Special</span> 
           <span class="text-element_color">Package</span>
         </h1>
         <div class="m-auto justify-center flex space-x-[15px]">
-          <p class="font-medium tracking-widest text-[17px]">Bill Monthly</p>
+          <p class="font-[700] tracking-wider text-[17px] text-primary dark:text-[#fff]">Bill Monthly</p>
           <div class="flex items-center">
             <label class="relative cursor-pointer">
               <input type="checkbox" class="sr-only peer" />
@@ -1042,70 +1152,72 @@
               </div>
             </label>
           </div>
-          <p class="font-medium tracking-widest text-[17px]">Bill Annualy</p>
+          <p class="font-[700] tracking-wider text-[17px] text-primary dark:text-[#fff]">Bill Annualy</p>
         </div>
       </div>
 
       <div class="flex flex-wrap -m-4">
-        <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+        <div class="p-4 xl:w-1/3 md:w-1/2 w-full" data-aos="fade-up"
+        data-aos-duration="1000">
           <div class="h-full p-6  border-2 border-element_color flex flex-col relative overflow-hidden">
             <!-- <h2 class="text-sm tracking-widest title-font mb-1 font-medium">START</h2> -->
-            <h1 class="text-4xl text-gray-900 pb-4 mb-4  border-gray-200 font-bold leading-none">Silver</h1>
+            <h1 class="text-4xl text-gray-900 pb-4 mb-4  border-gray-200 font-bold leading-none text-primary dark:text-[#fff]">Silver</h1>
             <p class="flex items-center text-gray-600 mb-2">
               <span
-                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-primary dark:text-[#fff] rounded-full flex-shrink-0">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"
                   class="w-8 h-8" viewBox="0 0 24 24">
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
-              </span><span>Unlimited club access</span>
+              </span><span class="font-[500] traking-wider text-primary dark:text-[#fff]">Unlimited club access</span>
             </p>
             <p class="flex items-center text-gray-600 mb-2">
               <span
-                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-[#474646] rounded-full flex-shrink-0">
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-[#474646] dark:text-[#fff] rounded-full flex-shrink-0">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"
                   class="w-8 h-8" viewBox="0 0 24 24">
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
-              </span><span class="text-[#474646]">Group attendance</span>
+              </span><span class="text-[#474646] font-[500] traking-wider dark:text-[#fff]">Group attendance</span>
             </p>
             <p class="flex items-center text-gray-600 mb-2">
               <span
-                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-[#474646] rounded-full flex-shrink-0">
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-[#474646] dark:text-[#fff] rounded-full flex-shrink-0">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"
                   class="w-8 h-8" viewBox="0 0 24 24">
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
-              </span><span class="text-[#474646]">Gym visits</span>
+              </span><span class="text-[#474646] font-[500] traking-wider dark:text-[#fff]">Gym visits</span>
             </p>
             <p class="flex items-center text-gray-600 mb-2">
               <span
-                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-[#474646] rounded-full flex-shrink-0">
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-[#474646] dark:text-[#fff] rounded-full flex-shrink-0">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"
                   class="w-8 h-8" viewBox="0 0 24 24">
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
-              </span><span class="text-[#474646]">Visits to the bath complex</span>
+              </span><span class="text-[#474646] font-[500] traking-wider dark:text-[#fff]">Visits to the bath complex</span>
             </p>
             <p class="flex items-center text-gray-600 mb-2">
               <span
-                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-[#474646] rounded-full flex-shrink-0">
+                class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-[#474646] dark:text-[#fff] rounded-full flex-shrink-0">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"
                   class="w-8 h-8" viewBox="0 0 24 24">
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
-              </span><span class="text-[#474646]">Gym, fight club</span>
+              </span><span class="text-[#474646] font-[500] traking-wider dark:text-[#fff]">Gym, fight club</span>
             </p>
             <div class="mt-[10px] mb-[40px]">
-              <h1 class="text-[25px] font-[700]">$135 <span class="text-[14px] font-normal">/Month</span></h1>
+              <h1 class="text-[25px] font-[700] text-primary dark:text-[#fff]">$135 <span class="text-[14px] font-normal dark:text-[#fff]">/Month</span></h1>
             </div>
             <button
-              class="flex items-center mt-auto text-white bg-element_color  py-2 px-4 w-full focus:outline-none hover:bg-[#000] transition-all duration-100 ease-in-out hover:text-white hover:border hover:border-element_color text-center">
-              <div class="text-center m-auto flex justify-center font-medium">Choose</div>
+              class="flex items-center mt-auto text-white bg-element_color  py-2 px-4 w-full focus:outline-none text-[#fff] hover:border-none hover:bg-[#000] transition-all duration-100 ease-in-out hover:text-white hover:border hover:border-element_color text-center">
+              <div class="text-center m-auto flex justify-center font-[700]">Choose</div>
             </button>
           </div>
         </div>
-        <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+        <div class="p-4 xl:w-1/3 md:w-1/2 w-full" data-aos="fade-up"
+        data-aos-duration="1000">
           <div class="h-full p-6  border-2 border-element_color flex flex-col relative overflow-hidden">
             <span
               class="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
@@ -1165,7 +1277,8 @@
             </button>
           </div>
         </div>
-        <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+        <div class="p-4 xl:w-1/3 md:w-1/2 w-full" data-aos="fade-up"
+        data-aos-duration="1000">
           <div class="h-full p-6  border-2 border-element_color flex flex-col relative overflow-hidden">
             <!-- <h2 class="text-sm tracking-widest title-font mb-1 font-medium">START</h2> -->
             <h1 class="text-4xl text-gray-900 pb-4 mb-4  border-gray-200 font-bold leading-none">Platinum</h1>
@@ -1235,55 +1348,70 @@
   <section class="mb-[100px]">
     <div class="contact_section">
       <div class="container mx-auto pb-[95px] pt-[60px]">
-      
-        <h1 class="text-center text-[35px] md:text-[50px] font-oswald font-[700] text-[#fff]"><span class="text-element_color">Contact</span> Our Personal <span class="text-element_color">Tranning Gyms <p>Today</p></span></h1>
-        <p class="text-center text-[#fff] mt-[15px] mb-[15px] sm:px-0 w-[100%] md:w-[70%] m-auto text-[15px] font-[300]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sapiente quas explicabo vel itaque molestias temporibus officiis, fugiat veniam perferendis quae porro excepturi</p>
 
-       <div class="flex flex-col space-y-8">
-        <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-[110px] sm:space-y-0 space-y-4 sm:px-0 items-end">
-          <div class="relative flex-grow w-full">
-            <div class="flex items-center space-x-4">
-              <label for="full-name" class="leading-7 text-sm text-[#fff] mt-[18px] font-bold"> Name </label>
-              <input type="text" id="full-name" name="full-name" class="duration-200 ease-in-out bg-[#00006000]  border-b border-dotted border-[#fff] focus:outline-none focus:border-element_color hover:border-b hover:border-element_color w-full placeholder-text_color text-[#fff]">
-            </div>
-          </div>
-          <div class="relative flex-grow w-full">
-            <div class="flex items-center space-x-4">
-              <label for="full-name" class="leading-7 text-sm text-[#fff] mt-[18px] font-bold"> Email </label>
-              <input type="text" id="full-name" name="full-name" class="duration-200 ease-in-out bg-[#00006000]  border-b border-dotted border-[#fff] focus:outline-none focus:border-element_color hover:border-b hover:border-element_color w-full placeholder-text_color text-[#fff]">
-            </div>
-          </div>
-        </div>
+        <h1 class="text-center text-[35px] md:text-[50px] font-oswald font-[700] text-[#fff]"><span
+            class="text-element_color">Contact</span> Our Personal <span class="text-element_color">Tranning Gyms <p>
+              Today</p></span></h1>
+        <p
+          class="text-center text-[#fff] mt-[15px] mb-[15px] sm:px-0 w-[100%] md:w-[70%] m-auto text-[15px] font-[300]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sapiente quas explicabo vel itaque
+          molestias temporibus officiis, fugiat veniam perferendis quae porro excepturi</p>
 
-        <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-[110px] sm:space-y-0 space-y-4 sm:px-0 items-end">
-          <div class="relative flex-grow w-full">
-            <div class="flex items-center space-x-4">
-              <label for="full-name" class="leading-7 text-sm text-[#fff] mt-[18px] font-bold"> Address </label>
-              <input type="text" id="full-name" name="full-name" class="duration-200 ease-in-out bg-[#00006000]  border-b border-dotted border-[#fff] focus:outline-none focus:border-element_color hover:border-b hover:border-element_color w-full placeholder-text_color text-[#fff]">
+        <div class="flex flex-col space-y-8">
+          <div
+            class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-[110px] sm:space-y-0 space-y-4 sm:px-0 items-end">
+            <div class="relative flex-grow w-full">
+              <div class="flex items-center space-x-4">
+                <label for="full-name" class="leading-7 text-sm text-[#fff] mt-[18px] font-bold"> Name </label>
+                <input type="text" id="full-name" name="full-name"
+                  class="duration-200 ease-in-out bg-[#00006000]  border-b border-dotted border-[#fff] focus:outline-none focus:border-element_color hover:border-b hover:border-element_color w-full placeholder-text_color text-[#fff]">
+              </div>
+            </div>
+            <div class="relative flex-grow w-full">
+              <div class="flex items-center space-x-4">
+                <label for="full-name" class="leading-7 text-sm text-[#fff] mt-[18px] font-bold"> Email </label>
+                <input type="text" id="full-name" name="full-name"
+                  class="duration-200 ease-in-out bg-[#00006000]  border-b border-dotted border-[#fff] focus:outline-none focus:border-element_color hover:border-b hover:border-element_color w-full placeholder-text_color text-[#fff]">
+              </div>
             </div>
           </div>
-          <div class="relative flex-grow w-full">
-            <div class="flex items-center space-x-4">
-              <label for="full-name" class="leading-7 text-sm text-[#fff] mt-[18px] font-bold"> Phone </label>
-              <input type="text" id="full-name" name="full-name" class="duration-200 ease-in-out bg-[#00006000]  border-b border-dotted border-[#fff] focus:outline-none focus:border-element_color hover:border-b hover:border-element_color w-full placeholder-text_color text-[#fff]">
-            </div>
-          </div>
-        </div>
 
-        <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-[110px] sm:space-y-0 space-y-4 sm:px-0 items-end">
-          <div class="relative flex-grow w-full">
-            <div class="flex-col items-center">
-              <label for="full-name" class="leading-7 text-center  text-sm text-[#fff]  font-bold"> Write Here About Your Goals  </label>
-              <textarea name="goals" id="" class="bg-[#00006000] mt-[10px] border border-[#fff] focus:outline-none hover:border-element_color rounded-sm w-full border-dotted text-[#fff] placeholder-[#fff] px-[4px]">
+          <div
+            class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-[110px] sm:space-y-0 space-y-4 sm:px-0 items-end">
+            <div class="relative flex-grow w-full">
+              <div class="flex items-center space-x-4">
+                <label for="full-name" class="leading-7 text-sm text-[#fff] mt-[18px] font-bold"> Address </label>
+                <input type="text" id="full-name" name="full-name"
+                  class="duration-200 ease-in-out bg-[#00006000]  border-b border-dotted border-[#fff] focus:outline-none focus:border-element_color hover:border-b hover:border-element_color w-full placeholder-text_color text-[#fff]">
+              </div>
+            </div>
+            <div class="relative flex-grow w-full">
+              <div class="flex items-center space-x-4">
+                <label for="full-name" class="leading-7 text-sm text-[#fff] mt-[18px] font-bold"> Phone </label>
+                <input type="text" id="full-name" name="full-name"
+                  class="duration-200 ease-in-out bg-[#00006000]  border-b border-dotted border-[#fff] focus:outline-none focus:border-element_color hover:border-b hover:border-element_color w-full placeholder-text_color text-[#fff]">
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-[110px] sm:space-y-0 space-y-4 sm:px-0 items-end">
+            <div class="relative flex-grow w-full">
+              <div class="flex-col items-center">
+                <label for="full-name" class="leading-7 text-center  text-sm text-[#fff]  font-bold"> Write Here About
+                  Your Goals </label>
+                <textarea name="goals" id=""
+                  class="bg-[#00006000] mt-[10px] border border-[#fff] focus:outline-none hover:border-element_color rounded-sm w-full border-dotted text-[#fff] placeholder-[#fff] px-[4px]">
               </textarea>
+              </div>
             </div>
           </div>
+          <div class="flex items-center justify-center m-auto text-center">
+            <button
+              class="bg-element_color px-12 hover:bg-[#00006000] transition-all duration-100 ease-in hover:border hover:border-element_color  py-2 text-[#fff] font-[500] ">Send</button>
+          </div>
         </div>
-        <div class="flex items-center justify-center m-auto text-center">
-            <button class="bg-element_color px-12 hover:bg-[#00006000] transition-all duration-100 ease-in hover:border hover:border-element_color  py-2 text-[#fff] font-[500] ">Send</button>
-        </div>
-       </div>
-        
+
       </div>
     </div>
   </section>
@@ -1294,102 +1422,108 @@
   </main>
   <!-- footer start  -->
 
-  <footer class="text-[#fff] body-font border-t-2 border-element_color">
+  <footer class="text-[#000] dark:text-[#fff] border-t border-element_color">
     <div
       class="container px-5 py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
           <img class="md:w-[160px] md:h-[60]" src="./public/image/logo.png" alt="">
         </a>
-        <p class="mt-6 text-sm text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        <p class="mt-6 text-[16px] text-gray-500 font-[700] traking-wider">Lorem Ipsum is simply dummy text of the
+          printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
       </div>
       <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font text-[20px] font-medium text-[#fff] tracking-widest mb-3">Healthy Living</h2>
+          <h2 class="title-font text-[20px] font-[700] text-element_color tracking-widest mb-3">Healthy Living</h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Fitness</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Fitness</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Health</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Health</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Nutrition</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Nutrition</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Health Recipies</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Health
+                Recipies</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Better Health</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Better Health</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font text-[20px] font-medium text-[#fff] tracking-widest mb-3">Service</h2>
+          <h2 class="title-font text-[20px] font-[700] text-element_color tracking-widest mb-3">Service</h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Fitness</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Fitness</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Health</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Health</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Nutrition</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Nutrition</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Health Recipies</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Health
+                Recipies</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Better Health</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Better Health</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font text-[20px] font-medium text-[#fff] tracking-widest mb-3">Quick Links</h2>
+          <h2 class="title-font text-[20px] font-[700] text-element_color tracking-widest mb-3">Quick Links</h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Fitness</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Fitness</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Health</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Health</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Nutrition</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Nutrition</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Health Recipies</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Health
+                Recipies</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Better Health</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Better Health</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font text-[20px] font-medium text-[#fff] tracking-widest mb-3">Support</h2>
+          <h2 class="title-font text-[20px] font-[700] text-element_color tracking-widest mb-3">Support</h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Fitness</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Fitness</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Health</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Health</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Nutrition</a>
+              <a class="text-[15px] hover:text-element_color cursor-pointer traking-wider font-[500]">Nutrition</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Health Recipies</a>
+              <a class="text-[14px] hover:text-element_color cursor-pointer traking-wider font-[500]">Health
+                Recipies</a>
             </li>
             <li>
-              <a class="text-[14px] hover:text-element_color cursor-pointer">Better Health</a>
+              <a class="text-[14px] hover:text-element_color cursor-pointer traking-wider font-[500]">Better Health</a>
             </li>
           </nav>
         </div>
       </div>
     </div>
-    <div class="border-t border-[#fff]">
+    <div class="border-t border-element_color">
       <div class="container  py-6  flex flex-wrap flex-col sm:flex-row">
-        <p class="text-sm text-center flex justify-center m-auto">© 2023 Created By Creative Soft Limited
+        <p class="text-sm text-center flex justify-center m-auto text-element_color font-[700] tracking-wider">© 2023
+          Created By Creative Soft Limited
           <a href="" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">Creative Soft Limited</a>
         </p>
       </div>
@@ -1403,7 +1537,8 @@
   <script src="./public/js/aos.js"></script>
   <script src="./public/js/owl.carousel.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.2/dist/cdn.min.js"></script>
+  <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
   <script type="module" src="/main.js"></script>
   <script>
     AOS.init();
@@ -1411,7 +1546,7 @@
   <script>
     $(document).ready(function () {
       $(window).scroll(function () {
-        if ($(this).scrollTop() > 250) {
+        if ($(this).scrollTop() > 220) {
           $("#top_header").fadeOut();
           $("#navigation_section").removeClass("bg-section_color");
           $("#navigation_section").addClass(
@@ -1428,14 +1563,100 @@
     });
   </script>
   <script>
-    var loader = document.getElementById("preloader");
-    var whole_section = document.getElementById("whole_section");
-    whole_section.style.opacity = "0";
-    window.addEventListener("load", function () {
-      loader.style.display = "none";
-      whole_section.style.opacity = "1";
+    $(window).on("load", function () {
+      $("#preloader").fadeOut(500);
     });
   </script>
+
+ <script>
+    const HSThemeAppearance = {
+    init() {
+        const defaultTheme = 'default'
+        let theme = localStorage.getItem('hs_theme') || defaultTheme
+
+        if (document.querySelector('html').classList.contains('dark')) return
+        this.setAppearance(theme)
+    },
+    _resetStylesOnLoad() {
+        const $resetStyles = document.createElement('style')
+        $resetStyles.innerText = `*{transition: unset !important;}`
+        $resetStyles.setAttribute('data-hs-appearance-onload-styles', '')
+        document.head.appendChild($resetStyles)
+        return $resetStyles
+    },
+    setAppearance(theme, saveInStore = true, dispatchEvent = true) {
+        const $resetStylesEl = this._resetStylesOnLoad()
+
+        if (saveInStore) {
+            localStorage.setItem('hs_theme', theme)
+        }
+
+        if (theme === 'auto') {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default'
+        }
+
+        document.querySelector('html').classList.remove('dark')
+        document.querySelector('html').classList.remove('default')
+        document.querySelector('html').classList.remove('auto')
+
+        document.querySelector('html').classList.add(this.getOriginalAppearance())
+
+        setTimeout(() => {
+            $resetStylesEl.remove()
+        })
+
+        if (dispatchEvent) {
+            window.dispatchEvent(new CustomEvent('on-hs-appearance-change', {detail: theme}))
+        }
+    },
+    getAppearance() {
+        let theme = this.getOriginalAppearance()
+        if (theme === 'auto') {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default'
+        }
+        return theme
+    },
+    getOriginalAppearance() {
+        const defaultTheme = 'default'
+        return localStorage.getItem('hs_theme') || defaultTheme
+    }
+}
+HSThemeAppearance.init()
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if (HSThemeAppearance.getOriginalAppearance() === 'auto') {
+        HSThemeAppearance.setAppearance('auto', false)
+    }
+})
+
+window.addEventListener('load', () => {
+    const $clickableThemes = document.querySelectorAll('[data-hs-theme-click-value]')
+    const $switchableThemes = document.querySelectorAll('[data-hs-theme-switch]')
+
+    $clickableThemes.forEach($item => {
+        $item.addEventListener('click', () => HSThemeAppearance.setAppearance($item.getAttribute('data-hs-theme-click-value'), true, $item))
+    })
+
+    $switchableThemes.forEach($item => {
+        $item.addEventListener('change', (e) => {
+            HSThemeAppearance.setAppearance(e.target.checked ? 'dark' : 'default')
+        })
+
+        $item.checked = HSThemeAppearance.getAppearance() === 'dark'
+    })
+
+    window.addEventListener('on-hs-appearance-change', e => {
+        $switchableThemes.forEach($item => {
+            $item.checked = e.detail === 'dark'
+        })
+    })
+})
+ </script>
+
+
+
+
+
 
 
 

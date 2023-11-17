@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -18,11 +19,12 @@ export default {
     },
     colors:{
       'primary':'#1E1E1E',
-      'element_color':'#F36100',
-      'text_color':'#FFFFFF',
+      'element_color':'#1FABE0',
+      'text_color':'#000',
     },
     fontFamily:{
-      oswald:'Oswald',
+      raj:'Rajdhani',
+      roboto:'Roboto Condensed'
     },
     extend: {
        animation: {

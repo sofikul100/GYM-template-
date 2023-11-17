@@ -6,21 +6,28 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif !important;
 }
 
 body{
-  /* font-family: 'Oswald', sans-serif; */
-  font-family: 'Barlow', sans-serif;
-  background-color: #000;
+  font-family: 'Rajdhani', sans-serif !important;
 }
+
+
+p{
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+
+
+
 
 nav#navigation_section {
   z-index: 500 !important;
 }
 
 .active-menu span{
-  color:#F36100;
-  border-bottom: 1px solid #F36100;
+  color:#1FABE0;
 }
 
 
@@ -28,7 +35,7 @@ nav#navigation_section {
   .btn-6 {
     text-align: center;
     display: inline-block;
-    background-color: #F36100;
+    background-color: #1FABE0;
     border:1px solid #F36100;
     cursor: pointer;
     position:relative;
@@ -141,55 +148,76 @@ nav#navigation_section {
 /* preloader  */
 /* preloader css */
 #preloader {
-  border: 10px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 10px solid #F36100;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 0.5s linear infinite;
-  /* Safari */
-  animation: spin 0.5s linear infinite;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: fixed;
+  z-index: 999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  
 }
-
-
-#progress1 {
-  border: 10px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 10px solid #F36100;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 0.5s linear infinite;
-  /* Safari */
-  animation: spin 0.5s linear infinite;
-  position: absolute;
-  top: 50%;
+#loader {
+  display: block;
+  position: relative;
   left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #1FABE0;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
-
-
-
-/* Safari */
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #1FABE0;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #1FABE0;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
 @-webkit-keyframes spin {
-  0% {
+  0%   {
       -webkit-transform: rotate(0deg);
-  }
-
-  100% {
-      -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
+      -ms-transform: rotate(0deg);
       transform: rotate(0deg);
   }
-
   100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
       transform: rotate(360deg);
   }
 }
-
+@keyframes spin {
+  0%   {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
 /* end preloader css */
