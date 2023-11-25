@@ -1,5 +1,3 @@
 <h1>Hello Redmi</h1>
-<img src="[[https://asset.cloudinary.com/dkip5r7mn/7701c6aa889a1fcd14394b2e0b5ff884](https://res.cloudinary.com/dkip5r7mn/image/upload/v1700902683/projects%20image/FireShot_Capture_010_-_Gym_Tainer_-_localhost_mwyycr.png)https://res.cloudinary.com/dkip5r7mn/image/upload/v1700902683/projects%20image/FireShot_Capture_010_-_Gym_Tainer_-_localhost_mwyycr.png](https://res.cloudinary.com/dkip5r7mn/image/upload/v1700902683/projects%20image/FireShot_Capture_010_-_Gym_Tainer_-_localhost_mwyycr.png)https://res.cloudinary.com/dkip5r7mn/image/upload/v1700902683/projects%20image/FireShot_Capture_010_-_Gym_Tainer_-_localhost_mwyycr.png"
-  width="500"
-  height="1000"
-  >
+
+![FireShot Capture 010 - Gym Tainer - localhost](https://github.com/sofikul100/GYM-template-/assets/121492313/8e32bd33-6c07-46af-a2bc-9a22250575f0)
